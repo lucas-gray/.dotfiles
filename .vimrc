@@ -11,7 +11,7 @@ set nocompatible
 syntax on
 
 " Colorscheme
-" colo solarized
+colo solarized
 
 " Disable the default Vim startup message.
 set shortmess+=I
