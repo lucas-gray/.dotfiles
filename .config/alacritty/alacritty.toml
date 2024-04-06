@@ -6,5 +6,5 @@ opacity = 0.5
 blur = true
 
 [font]
-normal = { family = "MesloLGS NF" }
+# normal = { family = "" }
 size = 18

@@ -36,7 +36,7 @@ summary = "{track} • {artists}"
 body = "{album}"
 
 [device]
-name = "laptop-lucas"
+name = ""
 device_type = "computer"
 volume = 70
 bitrate = 320
