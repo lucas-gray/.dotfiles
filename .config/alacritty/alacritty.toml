@@ -6,5 +6,5 @@ opacity = 0.5
 blur = true
 
 [font]
-# normal = { family = "" }
+normal = { family = "MesloLGS Nerd Font" }
 size = 18
