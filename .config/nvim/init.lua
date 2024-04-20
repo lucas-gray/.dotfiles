@@ -1,4 +1,4 @@
--- Lucas Gray
+-- Neovim configuration
 
 -- https://learnxinyminutes.com/docs/lua/
 -- :help lua-guide
