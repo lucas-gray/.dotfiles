@@ -1,12 +1,23 @@
 # Alacritty configuration
 
+# Linux configuration
 [window]
-padding = { x = 10, y = 10 }
 dynamic_padding = true
 decorations = "Buttonless"
 opacity = 0.5
-blur = true
 
 [font]
 normal = { family = "MesloLGS Nerd Font" }
 size = 18
+
+# MacOS configuration
+#[window]
+#padding = { x = 10, y = 10 }
+#dynamic_padding = true
+#decorations = "Buttonless"
+#opacity = 0.5
+#blur = true
+
+#[font]
+#normal = { family = "MesloLGS NF" }
+#size = 18
