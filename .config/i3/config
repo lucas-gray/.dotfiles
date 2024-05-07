@@ -8,7 +8,7 @@ font pango:MesloLGS Nerd Font 8
 
 # Border
 default_border pixel
-default_floating_border normal
+default_floating_border pixel
 smart_borders on
 
 # Colors                border  backgr. text    indicator child_border
