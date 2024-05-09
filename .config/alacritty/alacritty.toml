@@ -1,10 +1,12 @@
 # Alacritty configuration
 
 # Linux configuration
+import = ["~/.config/alacritty/tokyonight_storm.toml"]
+
 [window]
 dynamic_padding = true
 decorations = "Buttonless"
-opacity = 0.5
+opacity = 0.8
 
 [font]
 normal = { family = "MesloLGS Nerd Font" }
