@@ -1,3 +1,4 @@
 # Zathura configuration
 
-set database 'sqlite'
+include another-config "./tokyonight_storm.zathurarc"
+set database "sqlite"
