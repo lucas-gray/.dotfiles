@@ -9,6 +9,7 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias v='nvim'
+alias lswg='ls /opt/homebrew/etc/wireguard/'
 
 # Prompt
 PS1='[\u@\h \W]\$ '
