@@ -17,3 +17,5 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     startx
   fi
 fi
+
+export XDG_CONFIG_HOME="$HOME"/.config
