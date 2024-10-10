@@ -1,6 +1,7 @@
 # Alacritty configuration
 
-import = ["~/.config/alacritty/tokyonight_storm.toml"]
+#import = ["~/.config/alacritty/tokyonight_storm-folke.toml"]
+import = ["~/.config/alacritty/tokyonight_storm-zatchheems.toml"]
 
 [window]
 dynamic_padding = true
