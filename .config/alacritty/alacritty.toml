@@ -1,8 +1,5 @@
 # Alacritty configuration
 
-#import = ["~/.config/alacritty/tokyonight_storm-folke.toml"]
-import = ["~/.config/alacritty/tokyonight_storm-zatchheems.toml"]
-
 [window]
 dynamic_padding = true
 decorations = "Buttonless"
@@ -11,3 +8,7 @@ opacity = 0.8
 [font]
 normal = { family = "MesloLGS Nerd Font" }
 size = 18
+
+[general]
+#import = ["~/.config/alacritty/tokyonight_storm-folke.toml"]
+import = ["~/.config/alacritty/tokyonight_storm-zatchheems.toml"]
