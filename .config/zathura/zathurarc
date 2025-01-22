@@ -1,4 +1,5 @@
 # Zathura configuration
 
-include another-config "./tokyonight_storm.zathurarc"
+include "./tokyonight_storm.zathurarc"
+set font "MesloLGS Nerd Font 12"
 set database "sqlite"
