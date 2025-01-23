@@ -1,5 +1,7 @@
 # Zathura configuration
 
-include "./tokyonight_storm.zathurarc"
 set font "MesloLGS Nerd Font 12"
 set database "sqlite"
+set selection-clipboard clipboard
+
+include "./tokyonight_storm.zathurarc"
