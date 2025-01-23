@@ -4,4 +4,7 @@ set font "MesloLGS Nerd Font 12"
 set database "sqlite"
 set selection-clipboard clipboard
 
+set window-title-page true
+set window-title-basename true
+
 include "./tokyonight_storm.zathurarc"
