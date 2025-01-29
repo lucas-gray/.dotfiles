@@ -11,7 +11,8 @@ export EDITOR=nvim
 export SUDO_EDITOR=nvim
 
 # Aliases
-alias v=nvim
+alias v='nvim'
+alias vimdiff='nvim -d'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
