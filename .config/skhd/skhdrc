@@ -1,4 +1,4 @@
 # skhd Configuration
 
 # Open Alacritty
-cmd - return : /Applications/Alacritty.app/Contents/MacOS/alacritty
+cmd - return : alacritty
