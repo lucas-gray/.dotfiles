@@ -32,9 +32,6 @@ set ai
 " Shows command at bottom
 set showcmd 
 
-" Highlight current line
-set cursorline 
-
 " Highlight matching for []{}()
 set showmatch 
 
