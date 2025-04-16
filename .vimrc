@@ -11,6 +11,9 @@ set shortmess+=I
 set number
 set relativenumber
 
+" Minimum number of screen lines to keep above and below the cursor
+set scrolloff=10
+
 " Always show the status line at the bottom, even if you only have one window open
 set laststatus=2
 
