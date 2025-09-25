@@ -7,7 +7,7 @@ opacity = 0.8
 
 [font]
 normal = { family = "MesloLGS Nerd Font" }
-size = 18
+size = 24
 
 [general]
 #import = ["~/.config/alacritty/tokyonight_storm-folke.toml"]
