@@ -1,6 +1,6 @@
 # Zathura configuration
 
-set font "MesloLGS Nerd Font 12"
+set font "JetBrainsMono Nerd Font 18"
 set database "sqlite"
 set selection-clipboard clipboard
 
