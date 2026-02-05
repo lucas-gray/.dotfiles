@@ -3,7 +3,7 @@
 [window]
 dynamic_padding = true
 decorations = "Buttonless"
-opacity = 0.9
+opacity = 0.95
 
 [font]
 normal = { family = "JetBrainsMono Nerd Font" }
