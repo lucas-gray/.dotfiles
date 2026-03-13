@@ -70,6 +70,10 @@ vim.opt.cursorline = false
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
+vim.o.wrap = false
+vim.o.sidescroll = 5
+vim.opt.listchars:append { precedes = '<', extends = '>' }
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
