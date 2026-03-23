@@ -4,6 +4,7 @@
 dynamic_padding = true
 decorations = "Buttonless"
 opacity = 0.95
+startup_mode = "Maximized"
 
 [font]
 normal = { family = "JetBrainsMono Nerd Font" }
@@ -15,5 +16,4 @@ bindings = [
 ]
 
 [general]
-#import = ["~/.config/alacritty/tokyonight_storm-folke.toml"]
-import = ["~/.config/alacritty/tokyonight_storm-zatchheems.toml"]
+import = ["rose-pine.toml"]
