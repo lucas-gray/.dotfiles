@@ -7,4 +7,4 @@ set selection-clipboard clipboard
 set window-title-page true
 set window-title-basename true
 
-include "./tokyonight_storm.zathurarc"
+include "rose-pine"
