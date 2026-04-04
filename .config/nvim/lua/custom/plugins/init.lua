@@ -8,4 +8,8 @@ return {
     ---@type render.md.UserConfig
     opts = {},
   },
+  {
+    'sphamba/smear-cursor.nvim',
+    opts = {},
+  },
 }
