@@ -11,6 +11,12 @@ export EDITOR=nvim
 export SUDO_EDITOR=nvim
 export SECOND_BRAIN="$HOME"/second-brain/
 
+# WSL environment variables
+if [[ "$(uname -r)" == *"WSL"* ]]; then
+  export GALLIUM_DRIVER=d3d12
+  export LIBVA_DRIVER_NAME=d3d12
+fi
+
 # Aliases
 alias v='nvim'
 alias vimdiff='nvim -d'
