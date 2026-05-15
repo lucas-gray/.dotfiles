@@ -9,4 +9,4 @@
 [gpg]
 	format = ssh
 [gpg "ssh"]
-	allowedSignersFile = ~/.config/git/allowed-signers
+	allowedSignersFile = ~/.ssh/allowed_signers
