@@ -1,0 +1,4 @@
+" IdeaVim configuration
+" Use existing .vimrc as base configuration
+source ~/.config/vim/vimrc
+set clipboard+=ideaput
