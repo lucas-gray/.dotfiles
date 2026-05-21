@@ -1,5 +1,8 @@
 # Alacritty configuration
 
+[general]
+import = ["rose-pine.toml"]
+
 [window]
 dynamic_padding = true
 decorations = "Buttonless"
@@ -10,10 +13,10 @@ startup_mode = "Maximized"
 normal = { family = "JetBrainsMono Nerd Font" }
 size = 24
 
+[selection]
+save_to_clipboard = true
+
 [keyboard]
 bindings = [
-    { key = "Return", mods = "Shift", chars = "\n" }
+{ key = "Return", mods = "Shift", chars = "\n" }
 ]
-
-[general]
-import = ["rose-pine.toml"]
