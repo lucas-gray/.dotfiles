@@ -4,6 +4,9 @@
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
+# Environment Variables
+export XDG_CONFIG_HOME="$HOME"/.config
+
 # Run on MacOS
 if [[ "$OSTYPE" == "darwin"* ]]; then
 
@@ -39,6 +42,3 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     startx
   fi
 fi
-
-# Environment Variables
-export XDG_CONFIG_HOME="$HOME"/.config
