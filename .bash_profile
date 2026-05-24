@@ -34,11 +34,3 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 
 fi
-
-# Run on Linux
-if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-  # Start X on Linux
-  if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
-    startx
-  fi
-fi
