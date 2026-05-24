@@ -40,6 +40,7 @@ fi
 alias v='nvim'
 alias vimdiff='nvim -d'
 alias ls='ls --color=auto'
+alias diff='diff --color=auto'
 alias grep='grep --color=auto'
 alias sb='clear && cd "$SECOND_BRAIN" && tree -d -I 04_archive'
 
