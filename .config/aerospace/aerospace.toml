@@ -35,6 +35,7 @@ on-mode-changed = []
 
 [mode.main.binding]
     alt-enter = 'exec-and-forget open -n /Applications/Alacritty.app/'
+    alt-b = 'exec-and-forget open -n /Applications/Helium.app/'
 
     alt-h = 'focus left'
     alt-j = 'focus down'
