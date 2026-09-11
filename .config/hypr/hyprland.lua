@@ -257,8 +257,8 @@ local mainMod = 'SUPER'
 hl.bind(mainMod .. ' + RETURN', hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. ' + Q', hl.dsp.window.close())
 hl.bind(mainMod .. ' + SHIFT + Q', hl.dsp.exec_cmd "command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'")
-hl.bind(mainMod .. ' + SPACE', hl.dsp.window.float { action = 'toggle' })
-hl.bind(mainMod .. ' + D', hl.dsp.exec_cmd 'pkill wofi || wofi', { release = false })
+hl.bind(mainMod .. ' + SHIFT + SPACE', hl.dsp.window.float { action = 'toggle' })
+hl.bind(mainMod .. ' + SPACE', hl.dsp.exec_cmd 'pkill wofi || wofi', { release = false })
 hl.bind(mainMod .. ' + P', hl.dsp.window.pseudo())
 hl.bind(mainMod .. ' + F', hl.dsp.window.fullscreen { action = 'toggle' })
 hl.bind(mainMod .. ' + SLASH', hl.dsp.layout 'togglesplit') -- dwindle only
