@@ -408,10 +408,17 @@ require('lazy').setup({
       --  See `:help lsp-config` for information about keys and how to configure
       ---@type table<string, vim.lsp.Config>
       local servers = {
-        ruff = {},
+        -- Python
         ty = {},
-        stylua = {}, -- Used to format Lua code
+        ruff = {},
 
+        -- HTML, CSS, JS
+        prettier = {},
+        html = {},
+        cssls = {},
+
+        -- Lua
+        stylua = {},
         -- Special Lua Config, as recommended by neovim help docs
         lua_ls = {
           on_init = function(client)
@@ -489,6 +496,7 @@ require('lazy').setup({
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
+        html = { 'prettier' },
       },
     },
   },
