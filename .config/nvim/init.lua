@@ -413,9 +413,9 @@ require('lazy').setup({
         ruff = {},
 
         -- HTML, CSS, JS
-        prettier = {},
         html = {},
         cssls = {},
+        ts_ls = {},
 
         -- Lua
         stylua = {},
@@ -496,7 +496,6 @@ require('lazy').setup({
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
-        html = { 'prettier' },
       },
     },
   },
