@@ -12,9 +12,16 @@ hl.monitor {
   output = 'DP-1',
   mode = '2560x1440@280.10Hz',
   position = 'auto',
-  scale = 1,
+  scale = 2,
   bitdepth = 8,
   cm = 'auto',
+}
+
+-- Unscale Xwayland
+hl.config {
+  xwayland = {
+    force_zero_scaling = true,
+  },
 }
 
 ---------------------
@@ -54,9 +61,9 @@ hl.env('XDG_SESSION_DESKTOP', 'Hyprland')
 
 -- Cursor Theme
 hl.env('HYPRCURSOR_THEME', 'GoogleDot-Black')
-hl.env('HYPRCURSOR_SIZE', '24')
+hl.env('HYPRCURSOR_SIZE', '22')
 hl.env('XCURSOR_THEME', 'GoogleDot-Black')
-hl.env('XCURSOR_SIZE', '24')
+hl.env('XCURSOR_SIZE', '22')
 
 -- NVIDIA Specific
 hl.env('LIBVA_DRIVER_NAME', 'nvidia')
@@ -67,24 +74,6 @@ hl.env('ELECTRON_OZONE_PLATFORM_HINT', 'auto')
 
 -- Qt Variables
 hl.env('QT_QPA_PLATFORMTHEME', 'qt6ct')
-
------------------------
------ PERMISSIONS -----
------------------------
-
--- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Permissions/
--- Please note permission changes here require a Hyprland restart and are not applied on-the-fly
--- for security reasons
-
--- hl.config({
---   ecosystem = {
---     enforce_permissions = true,
---   },
--- })
-
--- hl.permission("/usr/(bin|local/bin)/grim", "screencopy", "allow")
--- hl.permission("/usr/(lib|libexec|lib64)/xdg-desktop-portal-hyprland", "screencopy", "allow")
--- hl.permission("/usr/(bin|local/bin)/hyprpm", "plugin", "allow")
 
 -----------------------
 ---- LOOK AND FEEL ----
@@ -168,24 +157,6 @@ hl.animation { leaf = 'workspacesIn', enabled = true, speed = 1.21, bezier = 'al
 hl.animation { leaf = 'workspacesOut', enabled = true, speed = 1.94, bezier = 'almostLinear', style = 'fade' }
 hl.animation { leaf = 'zoomFactor', enabled = true, speed = 7, bezier = 'quick' }
 
--- Ref https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
--- "Smart gaps" / "No gaps when only"
--- uncomment all if you wish to use that.
--- hl.workspace_rule({ workspace = "w[tv1]", gaps_out = 0, gaps_in = 0 })
--- hl.workspace_rule({ workspace = "f[1]",   gaps_out = 0, gaps_in = 0 })
--- hl.window_rule({
---     name  = "no-gaps-wtv1",
---     match = { float = false, workspace = "w[tv1]" },
---     border_size = 0,
---     rounding    = 0,
--- })
--- hl.window_rule({
---     name  = "no-gaps-f1",
---     match = { float = false, workspace = "f[1]" },
---     border_size = 0,
---     rounding    = 0,
--- })
-
 -- See https://wiki.hypr.land/Configuring/Layouts/Dwindle-Layout/ for more
 hl.config {
   dwindle = {
@@ -241,13 +212,6 @@ hl.config {
   },
 }
 
--- Example per-device config
--- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Devices/ for more
-hl.device {
-  name = 'epic-mouse-v1',
-  sensitivity = -0.5,
-}
-
 ---------------------
 ---- KEYBINDINGS ----
 ---------------------
@@ -275,6 +239,9 @@ hl.bind(mainMod .. ' + SHIFT + H', hl.dsp.window.move { direction = 'left' })
 hl.bind(mainMod .. ' + SHIFT + L', hl.dsp.window.move { direction = 'right' })
 hl.bind(mainMod .. ' + SHIFT + K', hl.dsp.window.move { direction = 'up' })
 hl.bind(mainMod .. ' + SHIFT + J', hl.dsp.window.move { direction = 'down' })
+
+-- Switch to previous workspace with mainMod + tab
+hl.bind(mainMod .. ' + TAB', hl.dsp.focus { workspace = 'previous' })
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
@@ -338,14 +305,6 @@ hl.window_rule {
 
   no_focus = true,
 }
-
--- Layer rules also return a handle.
--- local overlayLayerRule = hl.layer_rule({
---     name  = "no-anim-overlay",
---     match = { namespace = "^my-overlay$" },
---     no_anim = true,
--- })
--- overlayLayerRule:set_enabled(false)
 
 -- Hyprland-run windowrule
 hl.window_rule {
