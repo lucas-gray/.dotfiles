@@ -44,6 +44,9 @@ alias diff='diff --color=auto'
 alias grep='grep --color=auto'
 alias sb='clear && cd "$SECOND_BRAIN" && tree -d -I 04_archive'
 
+# Ignore case auto-completion
+bind 'set completion-ignore-case on'
+
 # Configure git-prompt options
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWUNTRACKEDFILES=1
