@@ -70,11 +70,11 @@ on-mode-changed = []
     alt-shift-7 = 'move-node-to-workspace 7'
     alt-shift-8 = 'move-node-to-workspace 8'
     alt-shift-9 = 'move-node-to-workspace 9'
+    alt-shift-0 = 'move-node-to-workspace 10'
 
     alt-f = 'fullscreen'
     alt-shift-f = 'layout floating tiling'
     alt-r = 'reload-config'
-    alt-shift-0 = 'flatten-workspace-tree' # Reset workspace
 
     cmd-h = [] # Disable "hide application"
     cmd-alt-h = [] # Disable "hide others"
