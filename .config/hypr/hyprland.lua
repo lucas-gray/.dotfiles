@@ -42,6 +42,7 @@ hl.on('hyprland.start', function()
   hl.exec_cmd 'systemctl --user start hyprpolkitagent'
   hl.exec_cmd 'dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY'
   hl.exec_cmd 'gnome-keyring-daemon --start --components=secrets'
+  hl.exec_cmd 'qs'
 end)
 
 ------------------
@@ -61,9 +62,9 @@ hl.env('XDG_SESSION_DESKTOP', 'Hyprland')
 
 -- Cursor Theme
 hl.env('HYPRCURSOR_THEME', 'GoogleDot-Black')
-hl.env('HYPRCURSOR_SIZE', '22')
+hl.env('HYPRCURSOR_SIZE', '18')
 hl.env('XCURSOR_THEME', 'GoogleDot-Black')
-hl.env('XCURSOR_SIZE', '22')
+hl.env('XCURSOR_SIZE', '18')
 
 -- NVIDIA Specific
 hl.env('LIBVA_DRIVER_NAME', 'nvidia')
