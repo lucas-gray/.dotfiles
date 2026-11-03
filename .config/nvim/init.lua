@@ -13,6 +13,9 @@ do
   vim.o.number = true
   vim.o.relativenumber = true
   vim.o.expandtab = true
+  vim.o.tabstop = 4
+  vim.o.softtabstop = 4
+  vim.o.shiftwidth = 4
   vim.o.mouse = 'a'
   vim.o.showmode = false
   vim.schedule(function() vim.o.clipboard = 'unnamedplus' end)
@@ -350,16 +353,18 @@ do
   ---@type table<string, vim.lsp.Config>
   local servers = {
     -- Python
-    ty = {},
-    ruff = {},
+    ty = {}, -- Type checker & LSP
+    ruff = {}, -- Linter & formatter
 
-    -- HTML, CSS, JS
-    -- html = {},
-    -- cssls = {},
-    -- ts_ls = {},
+    -- Go
+    gopls = {},
+
+    -- TypeScript
+    tsc = {},
 
     -- Lua
     stylua = {},
+
     -- Special Lua Config, as recommended by neovim help docs
     lua_ls = {
       on_init = function(client)
@@ -428,6 +433,9 @@ do
       local enabled_filetypes = {
         lua = true,
         python = true,
+        html = true,
+        css = true,
+        javascript = true,
       }
       if enabled_filetypes[vim.bo[bufnr].filetype] then
         return { timeout_ms = 500 }
@@ -441,6 +449,8 @@ do
     -- External formatters
     formatters_by_ft = {
       javascript = { 'prettierd' },
+      html = { 'prettierd' },
+      css = { 'prettierd' },
     },
   }
 
