@@ -18,7 +18,7 @@ if [[ "$(uname -r)" == *"WSL"* ]]; then
 fi
 
 # Load ssh-agent on login and add private key
-if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+if [[ "$OSTYPE" == "linux-gnu"* && -t 0 && -t 1 ]]; then
   env=~/.ssh/agent.env
   agent_load_env () { test -f "$env" && . "$env" >| /dev/null ; }
   agent_start () {
